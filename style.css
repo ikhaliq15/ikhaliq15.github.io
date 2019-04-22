@@ -75,6 +75,46 @@ html, body {
   color: #505763;
 }
 
+/* for the list of classes taken */
+.classList {
+  width: 75%;
+}
+
+.classItem {
+  text-align: left;
+}
+
+.classItem hr {
+  width: 100%;
+}
+
+.className {
+  width: 25%;
+  float: left;
+}
+
+.className a {
+  text-decoration: none;
+  color: #0475e0;
+}
+
+.classStatus {
+  text-align: left;
+  line-height: 0em;
+}
+
+.classDesc {
+  width: 75%;
+  padding-top: 10px;
+  float: right;
+  color: #505763;
+}
+
+.classDesc a{
+    color: #0475e0;
+    text-decoration: none;
+}
+
 /* The navigation bar */
 .navbar {
   overflow: hidden;
@@ -192,6 +232,36 @@ html, body {
     float: right;
     color: #505763;
   }
+
+  /* class list */
+
+  .classList {
+   width: 85%;
+  }
+
+  .className {
+    width: 100%;
+    float: left;
+  }
+
+  .className a {
+    text-decoration: none;
+    color: #0475e0;
+  }
+
+  .classStatus {
+    text-align: left;
+    line-height: 0em;
+    width: 100%;
+  }
+
+  .classDesc {
+    width: 100%;
+    padding-top: 10px;
+    float: right;
+    color: #505763;
+  }
+
 
   /* Main content */
   .main {
