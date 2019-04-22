@@ -1,0 +1,77 @@
+* {
+  font-family: 'mido';
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem a{
+  color: #0475e0;
+  text-align: center;
+  font-size: 200%;
+  text-decoration: none;
+  line-height: 0em;
+}
+
+.menuItem a:hover{
+  color: #67adef;
+}
+
+.banner {
+  background: #0475e0;
+  width: 100%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.banner h2 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  line-height: 0em;
+}
+
+.banner p {
+  color: white;
+  text-align: center;
+  font-size: 125%;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #F8F8F8;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  left: 0;
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a, span{
+  float: left;
+  display: block;
+  color: #0475e0;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 150%;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: #67adef;
+}
+
+/* Main content */
+.main {
+  margin-top: 50px; /* Add a top margin to avoid content overlay */
+}
+
+@font-face {
+    font-family: 'mido'; /*a name to be used later*/
+    src: url('res/fonts/mido.otf'); /*URL to font*/
+}
