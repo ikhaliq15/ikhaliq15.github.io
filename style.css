@@ -7,6 +7,10 @@ html, body {
     padding: 0;
 }
 
+.menuItem {
+  width: 50%;
+}
+
 .menuItem a{
   color: #0475e0;
   text-align: center;
@@ -81,6 +85,10 @@ html, body {
   width: 100%; /* Full width */
 }
 
+.navbarMobile {
+  display: none;
+}
+
 /* Links inside the navbar */
 .navbar a, span{
   float: left;
@@ -100,7 +108,95 @@ html, body {
 
 /* Main content */
 .main {
-  margin-top: 50px; /* Add a top margin to avoid content overlay */
+/*  margin-top: 50px;  Add a top margin to avoid content overlay 
+*/}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+
+  .navbar {
+    display: none;
+  }
+
+  .navbarMobile {
+    display: none;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    /*position: fixed;*/ /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+  }
+
+  /* Links inside the navbar */
+  .navbarMobile a{
+    float: left;
+    display: block;
+    color: #0475e0;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 120%;
+    width: 100%;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  a.icon {
+    background: #F8F8F8;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 20px;
+    padding-left: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #0475e0;
+  }
+
+  .banner {
+    background: #0475e0;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 05px;
+  }
+
+  .menuItem {
+    width: 100%;
+  }
+
+  .projectList {
+   width: 85%;
+  }
+
+  .projectName {
+    width: 100%;
+    float: left;
+  }
+
+  .projectName a {
+    text-decoration: none;
+    color: #0475e0;
+  }
+
+  .projectStatus {
+    text-align: left;
+    line-height: 0em;
+    width: 100%;
+  }
+
+  .projectDesc {
+    width: 100%;
+    padding-top: 10px;
+    float: right;
+    color: #505763;
+  }
+
+  /* Main content */
+  .main {
+    margin-top: 0px; /* Add a top margin to avoid content overlay */
+  }
 }
 
 @font-face {

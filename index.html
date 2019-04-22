@@ -2,6 +2,19 @@
 <html>
 <head>
 
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
 	<script>
@@ -23,6 +36,16 @@
 		<a href="#contact">Practice</a>
 	</div>
 
+	<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+    	<i class="fa fa-bars"></i>
+ 	</a>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="">Imran Khaliq</a>
+		<a href="projects/index.html">Projects</a>
+		<a href="#contact">Practice</a>
+	</div>
+
 	<div class="main">
  		<div class="banner">
  			<br>
@@ -30,18 +53,18 @@
  			<p style="text-align: center;">I'm a student at UC Berkeley and I am studying computer science.</p>
  		</div>
 
- 		<br><br><br>
+ 		<br>
 
  		<center>
 	 		<div style="width: 65%;">
-		    	<div class="menuItem" style="width: 50%; float:left">
+		    	<div class="menuItem" style="float:left">
 		   			<center>
 		   				<a href="projects/index.html"><h3>Projects</h3></a>
 		   			</center>
 		   			<p style="color: #505763; padding-left: 10px; padding-right: 10px; font-size: 130%;">Check out the projects that I contribute to in my free time or for school.</p>
 				</div>
 
-				<div class="menuItem" style="width: 50%; float:right">
+				<div class="menuItem" style="float:right">
 		   			<center>
 		   				<a href="#practice"><h3>Practice</h3></a>
 		   			</center>
@@ -50,5 +73,18 @@
 			</div>
 		</center>
 	</div>
+
+
+	<script>
+	function mobileMenuShower() {
+	  var x = document.getElementsByClassName("navbarMobile")[0];
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+	</script>
+
 </body>
 </html>

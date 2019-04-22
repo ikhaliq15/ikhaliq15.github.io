@@ -2,6 +2,20 @@
 <html>
 <head>
 
+	<meta name="viewport" content="width=device-width" />
+
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
 	<script>
@@ -24,15 +38,23 @@
 		<a href="#contact">Practice</a>
 	</div>
 
+	<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+    	<i class="fa fa-bars"></i>
+ 	</a>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../index.html">Imran Khaliq</a>
+		<a href="">Projects</a>
+		<a href="#contact">Practice</a>
+	</div>
+
 	<div class="main">
  		<div class="banner">
  			<br>
  			<h2 style="margin-left: 50px; padding-bottom: 15px; font-size:250%;">Projects</h2>
- 			<p style="margin-left: 50px;font-size:120%;  line-height: 0em;
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
 ">Check out the projects that I contribute to in my free time or for school.</p>
  		</div>
-
- 		<br>
 
  		<center>
 	 		<div class="projectList">
@@ -65,5 +87,16 @@
 			</div>
 		</center>
 	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+	</script>
 </body>
 </html>
