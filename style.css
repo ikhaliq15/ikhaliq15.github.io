@@ -1,5 +1,5 @@
 * {
-  font-family: 'mido';
+  font-family: 'kadwa', Arial;
 }
 
 html, body {
@@ -37,6 +37,40 @@ html, body {
   font-size: 125%;
 }
 
+.projectList {
+  width: 75%;
+}
+
+.projectItem {
+  text-align: left;
+}
+
+.projectItem hr {
+  width: 100%;
+}
+
+.projectName {
+  width: 25%;
+  float: left;
+}
+
+.projectName a {
+  text-decoration: none;
+  color: #0475e0;
+}
+
+.projectStatus {
+  text-align: left;
+  line-height: 0em;
+}
+
+.projectDesc {
+  width: 75%;
+  padding-top: 10px;
+  float: right;
+  color: #505763;
+}
+
 /* The navigation bar */
 .navbar {
   overflow: hidden;
@@ -53,8 +87,8 @@ html, body {
   display: block;
   color: #0475e0;
   text-align: center;
-  padding: 14px 16px;
-  font-size: 150%;
+  padding: 10px 16px;
+  font-size: 120%;
   text-decoration: none;
 }
 
@@ -70,6 +104,6 @@ html, body {
 }
 
 @font-face {
-    font-family: 'mido'; /*a name to be used later*/
-    src: url('res/fonts/mido.otf'); /*URL to font*/
+    font-family: 'kadwa'; /*a name to be used later*/
+    src: url('res/fonts/Kadwa-Regular.ttf'); /*URL to font*/
 }
