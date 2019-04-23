@@ -5,6 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    padding-bottom: 30px;
 }
 
 li {
@@ -37,8 +38,8 @@ li {
 .banner h2 {
   color: white;
   font-size: 200%;
-  line-height: 0em;
-}
+/*  line-height: 0em;
+*/}
 
 .banner p {
   color: white;
@@ -77,6 +78,12 @@ li {
   padding-top: 10px;
   float: right;
   color: #505763;
+}
+
+a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* for the list of classes taken */
@@ -134,7 +141,7 @@ li {
 }
 
 /* Links inside the navbar */
-.navbar a, span{
+.navbar a, .navbar span{
   float: left;
   display: block;
   color: #0475e0;
@@ -179,7 +186,7 @@ li {
   }
 
   /* Links inside the navbar */
-  .navbarMobile a{
+  .navbarMobile a, .navbarMobile span{
     float: left;
     display: block;
     color: #0475e0;
