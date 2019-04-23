@@ -7,6 +7,10 @@ html, body {
     padding: 0;
 }
 
+li {
+  list-style-position: inside;
+}
+
 .menuItem {
   width: 50%;
 }
@@ -146,6 +150,12 @@ html, body {
   color: #67adef;
 }
 
+.topicNotes {
+  background: #f4f5f7; 
+  width: 50%; 
+  text-align: center;
+}
+
 /* Main content */
 .main {
 /*  margin-top: 50px;  Add a top margin to avoid content overlay 
@@ -262,6 +272,9 @@ html, body {
     color: #505763;
   }
 
+  .topicNotes {
+    width: 100%;
+  }
 
   /* Main content */
   .main {
@@ -272,4 +285,9 @@ html, body {
 @font-face {
     font-family: 'kadwa'; /*a name to be used later*/
     src: url('res/fonts/Kadwa-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+  font-family: 'kadwa-bold';
+  src: url('res/fonts/Kadwa-Bold.ttf');
 }
