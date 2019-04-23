@@ -163,6 +163,10 @@ a.icon {
   text-align: center;
 }
 
+/*.answerLabel {
+  font-size: 150%;
+}
+*/
 /* Main content */
 .main {
 /*  margin-top: 50px;  Add a top margin to avoid content overlay 
@@ -282,6 +286,10 @@ a.icon {
   .topicNotes {
     width: 100%;
   }
+
+/*  .answerLabel {
+    font-size: 125%;
+  }*/
 
   /* Main content */
   .main {
