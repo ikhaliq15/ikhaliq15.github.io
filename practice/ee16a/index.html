@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138667736-1');
+	</script>
+
+	
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<title>EE 16A | Imran Khaliq</title>
+</head>
+<body>
+	<div class="navbar">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+    	<i class="fa fa-bars"></i>
+ 	</a>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<div class="main">
+ 		<div class="banner">
+ 			<br>
+ 			<h2 style="margin-left: 50px; padding-bottom: 15px; font-size:250%;">EE 16A</h2>
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
+">Designing Information Devices and Systems</p>
+ 		</div>
+
+ 		<center>
+
+			<div style="background: #8ab6fc; margin-top: 15px; width: 85%;">
+				<center>
+					<p style="font-size: 100%;text-align: left; color: #202226; padding: 15px;"><b style="font-family: kadwa-bold">Note: </b>I am not an official teacher or GSI for any of the courses listed on this site unless otherwise stated. Any problems and notes are created from my own observations and may not accurately reflect the course's content.</p>
+				</center>
+			</div>
+
+			<div style="width: 85%;">
+				<h1 style="text-align: left; color: #505763">Topics</h1>
+
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="">
+						<h2 style="text-align: left; padding: 15px; padding-right: 30px; color: #505763;">Systems of Linear Equations
+							<a style="float: right;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(0)">
+	    						<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+	 						</a>
+	 					</h2>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<div class="topicNotes" style="float: left;">
+	 						<h3>Notes and Readings</h3>
+	 						<h4><a style="text-decoration: none; color: #0475e0" href="http://composingprograms.com/pages/16-higher-order-functions.html" target="_blank">Official Textbook Reading</a></h4>
+	 						<h4><a style="text-decoration: none; color: #0475e0" href="https://www.youtube.com/watch?v=tQR5ejQWuis&list=PL6BsET-8jgYVcca9trmJVoPpqgd1b3sO-&vq=hd1080" target="_blank">Official Video Cast</a></h4>
+	 							<!-- <li style="color: #f4f5f7">Placeholder (I'm bad at coding)</li> -->
+	 					</div>
+	 					<div class="topicNotes" style="float: right;">
+	 						<h3>Practice Problems</h3>
+	 						<h4><a style="text-decoration: none; color: #0475e0" href="higherOrder1.html">What Would Python Do #1</a></h4>
+	 						<h4><a style="text-decoration: none; color: #0475e0" href="higherOrder2.html">
+	 						What Would Python Do #2</a></h4>
+	 					</div>
+	 				</div>
+
+				</div>
+			</div>
+
+		</center>
+	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+
+		function toggleTopic(y) {
+			var topicHeader = document.getElementsByClassName("topicHeader")[y];
+			var topicDesc = document.getElementsByClassName("topicDesc")[y];
+
+			if (topicHeader.getElementsByTagName('i')[0].className == "fa fa-angle-down fa-2x") {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-up fa-2x";
+				topicDesc.style.display = "block";
+			} else {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-down fa-2x";
+				topicDesc.style.display = "none";
+			}
+
+		}
+	</script>
+</body>
+</html>
