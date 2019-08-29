@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138667736-1');
+	</script>
+
+	<link href="../../prism/prism.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<title>CS 61A | Imran Khaliq</title>
+</head>
+<body>
+	<script src="../../prism/prism.js"></script>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<div class="main">
+ 		<div class="banner">
+ 			<br>
+ 			<h2 style="margin-left: 50px; padding-bottom: 15px; margin-right: 50px; font-size:250%;">CS 61A - Post Lecture Practice</h2>
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
+">Practice Problems</p>
+ 		</div>
+
+ 		<center>
+
+			<div style="background: #8ab6fc; margin-top: 15px; width: 85%;">
+				<center>
+					<p style="font-size: 100%;text-align: left; color: #202226; padding: 15px;"><b style="font-family: kadwa-bold">Note: </b>I am not an official teacher or GSI for any of the courses listed on this site unless otherwise stated. Any problems and notes are created from my own observations and may not accurately reflect the course's content.</p>
+				</center>
+			</div>
+
+			<div style="width: 85%;">
+				<h1 style="text-align: left; color: #505763">Lecture 01 Practice Problems</h1>
+				
+				<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+			    	<i class="fa fa-bars"></i>
+			 	</a>
+				<!-- Added here because github thing messes up the nav bar-->
+				<div class="navbar">
+					<span></span>
+					<a href="../../index.html">Imran Khaliq</a>
+					<a href="../../projects/index.html">Projects</a>
+					<a href="../index.html">Practice</a>
+				</div>
+
+				<p style="text-align: left;">
+					For each of the expressions in the table below, write the output displayed by the interactive Python interpreter when the expression is evaluated. The output may have multiple lines. Expressions evaluated by the interpreter have a cumulative effect.
+					<br><br>
+					If an error occurs, write "Error", but include all output displayed before the error. If evaluation would run forever, write "Forever". To display a function value, write "Function".
+					<br><br>
+					Assume that you have started <i>python3</i> already.
+				</p>
+				
+				<h2 style="text-align: left;">Problem A</h2>
+				<pre><code class="language-python"> >>> 25 + 5 * 2</code></pre>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem A
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(0)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre><code class="language-python">35</code></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem B</h2>
+				<pre><code class="language-python"> >>> from operator import add
+ >>> (7 // add(-3, 5)) + (18 % 4)</code></pre>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem B
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(1)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python">5</code></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem C</h2>
+				<pre><code class="language-python"> >>> from operator import add, mul
+ >>> mul(3, max(0, add(4, -6), -7 % 2))</code></pre>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem C
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(2)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python">3</code></pre>
+	 				</div>
+				</div>
+
+				<h2 style="text-align: left;">Problem D</h2>
+				<pre><code class="language-python"> >>> # For extra practice, draw the expression tree for the nested expression in the last line.
+ >>> from operator import add, sub, mul
+ >>> mul(add(3, max(-2, 1, 0)), sub(5, 10))</code></pre>
+				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem D
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(3)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python">-20</code>
+
+<img src = "lecture01fig01.png"></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem E (Extra Challenge)</h2>
+				<pre><code class="language-python"> >>> # This is a challenge problem that covers the extra stuff Professor Denero covered in his last demo of the lecture.
+ >>> # It was not expected that you understood how this code works, but if you did here is some practice.
+ >>> words ={"word", "rubiks", "cube", "go", "bears", "daddy", "denero"}
+ >>> len(words)
+ >>> "rubiks" in words
+ >>> "orened"[::-1] in words
+ >>> {word for word in words if len(word) == 4}</code></pre>
+				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem E
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(4)">
+		    					<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python">7
+True
+True
+{'word', 'cube'}
+</code></pre>
+	 				</div>
+
+				</div>
+
+				<p>Have a question? Found an error? Email me at <a style="text-decoration: none; color: #0475e0" href="mailto:imran.khaliq@berkeley.edu">imran.khaliq@berkeley.edu</a> with the URL of the page and a short description.</p>
+
+			</div>
+		</center>
+	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+
+		function toggleTopic(y) {
+			var topicHeader = document.getElementsByClassName("topicHeader")[y];
+			var topicDesc = document.getElementsByClassName("topicDesc")[y];
+
+			if (topicHeader.getElementsByTagName('i')[0].className == "fa fa-angle-down fa-2x") {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-up fa-2x";
+				topicDesc.style.display = "block";
+			} else {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-down fa-2x";
+				topicDesc.style.display = "none";
+			}
+
+		}
+	</script>
+</body>
+</html>
