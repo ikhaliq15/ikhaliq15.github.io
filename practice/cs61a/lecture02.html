@@ -56,7 +56,7 @@
 			</div>
 
 			<div style="width: 85%;">
-				<h1 style="text-align: left; color: #505763">Lecture 01 Practice Problems</h1>
+				<h1 style="text-align: left; color: #505763">Lecture 02 Practice Problems</h1>
 				
 				<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
 			    	<i class="fa fa-bars"></i>
@@ -78,7 +78,10 @@
 				</p>
 				
 				<h2 style="text-align: left;">Problem A</h2>
-				<pre><code class="language-python"> >>> 25 + 5 * 2</code></pre>
+				<pre><code class="language-python"> >>> def cube(n):
+ ...     return n * n * n
+ >>> cube(cube(2))
+</code></pre>
 				<div class="topicList" style="width: 100%; background: #eff1f4;">
 					<div class="topicHeader" style="display: flex;">
 						<div style="width: 60%;text-align: left;">
@@ -93,14 +96,22 @@
 	 				</div>
 
 	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
-	 					<pre><code class="language-python">35</code></pre>
+	 					<pre><code class="language-python"></code>512</pre>
 	 				</div>
 
 				</div>
 
 				<h2 style="text-align: left;">Problem B</h2>
-				<pre><code class="language-python"> >>> from operator import add
- >>> (7 // add(-3, 5)) + (18 % 4)</code></pre>
+				<pre><code class="language-python"> >>> length, width = 20, 10
+ >>> area = length * width
+ >>> def getArea():
+ ...     return length * width
+ >>> area
+ >>> getArea()
+ >>> width = 20
+ >>> area
+ >>> getArea()
+</code></pre>
 				<div class="topicList" style="width: 100%; background: #eff1f4;">
 					<div class="topicHeader" style="display: flex;">
 						<div style="width: 60%;text-align: left;">
@@ -115,14 +126,20 @@
 	 				</div>
 
 	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
-	 					<pre style="margin: 0px;"><code class="language-python">5</code></pre>
+	 					<pre style="margin: 0px;"><code class="language-python"></code>200
+200
+200
+400</pre>
 	 				</div>
 
 				</div>
 
 				<h2 style="text-align: left;">Problem C</h2>
-				<pre><code class="language-python"> >>> from operator import add, mul
- >>> mul(3, max(0, add(4, -6), -7 % 2))</code></pre>
+				<pre><code class="language-python"> >>> blue = "blue"
+ >>> def blue(blue):
+ ...     blue = "green"
+ ...     return blue == 'blue'
+ >>> blue(blue)</code></pre>
 				<div class="topicList" style="width: 100%; background: #eff1f4;">
 					<div class="topicHeader" style="display: flex;">
 						<div style="width: 60%;text-align: left;">
@@ -137,14 +154,18 @@
 	 				</div>
 
 	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
-	 					<pre style="margin: 0px;"><code class="language-python">3</code></pre>
+	 					<pre style="margin: 0px;"><code class="language-python">False</code></pre>
 	 				</div>
 				</div>
 
 				<h2 style="text-align: left;">Problem D</h2>
-				<pre><code class="language-python"> >>> # For extra practice, draw the expression tree for the nested expression in the last line.
- >>> from operator import add, sub, mul
- >>> mul(add(3, max(-2, 1, 0)), sub(5, 10))</code></pre>
+				<pre><code class="language-python"> >>> from math import pi
+ >>> def area(radius):
+ ...     return radius * radius * pi
+ >>> def area(length, width):
+ ...     return length * width
+ >>> area(10)
+ >>> area(25, 4)</code></pre>
 				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
 					<div class="topicHeader" style="display: flex;">
 						<div style="width: 60%;text-align: left;">
@@ -159,21 +180,20 @@
 	 				</div>
 
 	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
-	 					<pre style="margin: 0px;"><code class="language-python">-20</code>
-
-<img src = "lecture01fig01.png"></pre>
+	 					<pre style="margin: 0px;"><code class="language-python">ERROR
+100</code></pre>
 	 				</div>
 
 				</div>
 
-				<h2 style="text-align: left;">Problem E (Extra Challenge)</h2>
-				<pre><code class="language-python"> >>> # This is a challenge problem that covers the extra stuff Professor Denero covered in his last demo of the lecture.
- >>> # It was not expected that you understood how this code works, but if you did here is some practice.
- >>> words = {"word", "rubiks", "cube", "go", "bears", "daddy", "denero"}
- >>> len(words)
- >>> "rubiks" in words
- >>> "orened"[::-1] in words
- >>> {word for word in words if len(word) == 4}</code></pre>
+				<h2 style="text-align: left;">Problem E</h2>
+				<pre><code class="language-python"> >>> # TIP: Draw an environment diagram to keep track of which names are binded to which values.
+ >>> from math import pi, sin, cos
+ >>> from operator import add, mul
+ >>> sin, cos = cos, sin
+ >>> add, mul = mul, cos
+ >>> f, g = mul, cos
+ >>> add(f(pi/2) + sin(pi/2), g(add(.5, pi)))</code></pre>
 				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
 					<div class="topicHeader" style="display: flex;">
 						<div style="width: 60%;text-align: left;">
@@ -188,11 +208,68 @@
 	 				</div>
 
 	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
-	 					<pre style="margin: 0px;"><code class="language-python">7
-True
-True
-{'word', 'cube'}
-</code></pre>
+	 					<pre style="margin: 0px;"><code class="language-python">1.0</code></pre>
+	 				</div>
+
+				</div>
+
+				<br>
+				<h2 style="text-align: left; color: #505763">Environment Diagrams</h2>
+				<p style="text-align: left;">
+					For the problems below, draw a complete environment diagram that results from executing the code below until the entire program is finished or an error occurs.
+				</p>
+
+				<h2 style="text-align: left;">Problem F</h2>
+				<pre><code class="language-python">def a(x, y):
+    return x + y
+    
+def b(x, z):
+    return x + z
+    
+a(b(4, 3), 5)</code></pre>
+				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem F
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(5)">
+		    					<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python"></code><img src="lecture02fig01.png">
+Link: <a href="http://pythontutor.com/composingprograms.html#code=def%20a%28x,%20y%29%3A%0A%20%20%20%20return%20x%20%2B%20y%0A%20%20%20%20%0Adef%20b%28x,%20z%29%3A%0A%20%20%20%20return%20x%20%2B%20z%0A%20%20%20%20%0Aa%28b%284,%203%29,%205%29&cumulative=true&mode=edit&origin=composingprograms.js&py=3&rawInputLstJSON=%5B%5D">Python Tutor - Composing Programs</a></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem G</h2>
+				<pre><code class="language-python"> >>>from operator import mul
+ >>> a, b, c = 20, 2, 3
+ >>> def d(a, c):
+ ... 		return a * b * c
+ >>> mul = d
+ >>> mul(b, d(a, a))</code></pre>
+				<div class="topicList" style="text-align: left; width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem G
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(6)">
+		    					<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python"></code><img src="lecture02fig02.png">
+Link: <a href="http://pythontutor.com/composingprograms.html#code=from%20operator%20import%20mul%0Aa,%20b,%20c%20%3D%2020,%202,%203%0Adef%20d%28a,%20c%29%3A%0A%20%20%20%20return%20a%20*%20b%20*%20c%0Amul%20%3D%20d%0Amul%28b,%20d%28a,%20a%29%29&cumulative=true&curInstr=11&mode=display&origin=composingprograms.js&py=3&rawInputLstJSON=%5B%5D">Python Tutor - Composing Programs</a></pre>
 	 				</div>
 
 				</div>
