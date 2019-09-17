@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138667736-1');
+	</script>
+
+	<link href="../../prism/prism.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<title>CS 61A | Imran Khaliq</title>
+</head>
+<body>
+	<script src="../../prism/prism.js"></script>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<div class="main">
+ 		<div class="banner">
+ 			<br>
+ 			<h2 style="margin-left: 50px; padding-bottom: 15px; margin-right: 50px; font-size:250%;">CS 61A - Environment Diagrams</h2>
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
+">Practice Problems</p>
+ 		</div>
+
+ 		<center>
+
+			<div style="background: #8ab6fc; margin-top: 15px; width: 85%;">
+				<center>
+					<p style="font-size: 100%;text-align: left; color: #202226; padding: 15px;"><b style="font-family: kadwa-bold">Note: </b>I am not an official teacher or GSI for any of the courses listed on this site unless otherwise stated. Any problems and notes are created from my own observations and may not accurately reflect the course's content.</p>
+				</center>
+			</div>
+
+			<div style="width: 85%;">
+				<h1 style="text-align: left; color: #505763">Environment Diagrams #1</h1>
+
+				<p style="text-align: left;">
+					Draw an environment diagram that results from executing the code below until the entire program is finished, an error occurs, or all frames are filled. You may not need to use all of the spaces, frames, or function values.
+					<br><br>
+					A complete answer will:
+					<ul style="text-align: left">
+						<li>Add all names and parent annotations to all local frames.</li>
+						<li>Add all values created or referenced during execution.</li>
+						<li>Show the return value for each local frame.</li>
+					</ul>
+				</p>
+
+				<script src="https://gist.github.com/ikhaliq15/5971e428ddce81b08c337492dd8a9b52.js"></script>
+
+				<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+			    	<i class="fa fa-bars"></i>
+			 	</a>
+				<!-- Added here because github thing messes up the nav bar-->
+				<div class="navbar">
+					<span></span>
+					<a href="../../index.html">Imran Khaliq</a>
+					<a href="../../projects/index.html">Projects</a>
+					<a href="../index.html">Practice</a>
+				</div>
+				
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(0)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre><img src="envd01.png">
+Link: <a href="http://pythontutor.com/composingprograms.html#code=def%20alien%28et%29%3A%0A%20%20%20%20moon,%20mars%20%3D%202,%203%0A%20%20%20%20return%20space%28moon%29%28mars%29%28et%29%0A%20%20%20%20%0Adef%20space%28ship%29%3A%0A%20%20%20%20mars%20%3D%204%0A%20%20%20%20space%20%3D%20ship%0A%20%20%20%20def%20ship%28space%29%3A%0A%20%20%20%20%20%20%20%20return%20lambda%20moon%3A%20mars%20%2B%20moon%20%2B%20space%0A%20%20%20%20mars%20%3D%20moon%20%2B%20mars%20%2B%20space%0A%20%20%20%20return%20ship%0A%0Amoon,%20mars,%20ship%20%3D%205,%206,%207%0Aalien%20%3D%20alien%28ship%29&cumulative=true&mode=edit&origin=composingprograms.js&py=3&rawInputLstJSON=%5B%5D">Python Tutor - Composing Programs</a></pre>
+	 				</div>
+
+				</div>
+				<p>Have a question? Found an error? Email me at <a style="text-decoration: none; color: #0475e0" href="mailto:imran.khaliq@berkeley.edu">imran.khaliq@berkeley.edu</a> with the URL of the page and a short description.</p>
+
+			</div>
+		</center>
+	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+
+		function toggleTopic(y) {
+			var topicHeader = document.getElementsByClassName("topicHeader")[y];
+			var topicDesc = document.getElementsByClassName("topicDesc")[y];
+
+			if (topicHeader.getElementsByTagName('i')[0].className == "fa fa-angle-down fa-2x") {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-up fa-2x";
+				topicDesc.style.display = "block";
+			} else {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-down fa-2x";
+				topicDesc.style.display = "none";
+			}
+
+		}
+	</script>
+</body>
+</html>
