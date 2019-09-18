@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138667736-1');
+	</script>
+
+	<link href="../../prism/prism.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<title>CS 61A | Imran Khaliq</title>
+</head>
+<body>
+	<script src="../../prism/prism.js"></script>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<div class="main">
+ 		<div class="banner">
+ 			<br>
+ 			<h2 style="margin-left: 50px; padding-bottom: 15px; margin-right: 50px; font-size:250%;">CS 61A - Recursion</h2>
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
+">Practice Problems</p>
+ 		</div>
+
+ 		<center>
+
+			<div style="background: #8ab6fc; margin-top: 15px; width: 85%;">
+				<center>
+					<p style="font-size: 100%;text-align: left; color: #202226; padding: 15px;"><b style="font-family: kadwa-bold">Note: </b>I am not an official teacher or GSI for any of the courses listed on this site unless otherwise stated. Any problems and notes are created from my own observations and may not accurately reflect the course's content.</p>
+				</center>
+			</div>
+
+			<div style="width: 85%;">
+				<h1 style="text-align: left; color: #505763">Recursion #2</h1>
+
+				<p style="text-align: left;">
+					The <i>finding_nemo</i> takes a non-negative single digit, <i>nemo</i>, and a non-negative integer, <i>ocean</i>. It returns the position of the first <i>nemo</i> in <i>ocean</i>, starting from the right side. The farthest right digit in <i>ocean</i> is position zero. Return <i>False</i> if <i>nemo</i> cannot be found in <i>ocean</i>. Refer to the doctests for examples how to use the <i>finding_nemo</i> function.
+				</p>
+
+				<!-- <script src="https://gist.github.com/ikhaliq15/7402ca1aa87842b1804c3422f21c0574.js"></script> -->
+				<pre><code class="language-python">def finding_nemo(nemo, ocean):
+	""" Find the position of the first digit equal to nemo in ocean, 
+		   with the farthest right digit being zero. If not found, return False.
+
+		   >>> finding_nemo(4, 12345)
+		   1
+		   >>> finding_nemo(3, 13375)
+		   2
+		   >>> finding_nemo(4, 123)
+		   False
+		   >>> finding_nemo(3, 3)
+		   0
+		   """
+	def marvin(ocean, fish_tank):
+		head, tail = ocean // 10, ocean % 10
+		if _________________________________ :
+			return False
+		if _________________________________ :
+			return _________________________________
+		return _________________________________
+	return _________________________________</code></pre>
+
+				<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+			    	<i class="fa fa-bars"></i>
+			 	</a>
+				<!-- Added here because github thing messes up the nav bar-->
+				<div class="navbar">
+					<span></span>
+					<a href="../../index.html">Imran Khaliq</a>
+					<a href="../../projects/index.html">Projects</a>
+					<a href="../index.html">Practice</a>
+				</div>
+				
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(0)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre><code class="language-python">def finding_nemo(nemo, ocean):
+	def marvin(ocean, fish_tank):
+		head, tail = ocean // 10, ocean % 10
+		if ocean == 0:
+			return False
+		if tail == nemo:
+			return fish_tank
+		return marvin(head, fish_tank + 1)
+	return marvin(ocean, 0)</code></pre>
+						
+	 				</div>
+
+				</div>
+				<p>Have a question? Found an error? Email me at <a style="text-decoration: none; color: #0475e0" href="mailto:imran.khaliq@berkeley.edu">imran.khaliq@berkeley.edu</a> with the URL of the page and a short description.</p>
+
+			</div>
+		</center>
+	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+
+		function toggleTopic(y) {
+			var topicHeader = document.getElementsByClassName("topicHeader")[y];
+			var topicDesc = document.getElementsByClassName("topicDesc")[y];
+
+			if (topicHeader.getElementsByTagName('i')[0].className == "fa fa-angle-down fa-2x") {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-up fa-2x";
+				topicDesc.style.display = "block";
+			} else {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-down fa-2x";
+				topicDesc.style.display = "none";
+			}
+
+		}
+	</script>
+</body>
+</html>
