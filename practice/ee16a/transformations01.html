@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<style>
+	     @media screen and (max-width:900px) {}
+	     @media screen and (min-width:900px) and (max-width:1200px) {}
+	     @media screen and (min-width:1200px) {}
+	</style>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<script type="text/javascript" src="css3-mediaqueries.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138667736-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138667736-1');
+	</script>
+
+	<link href="../../prism/prism.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" type="text/css" href="../../style.css">
+	<title>EE 16A | Imran Khaliq</title>
+</head>
+<body>
+	<script src="../../prism/prism.js"></script>
+	<div class="navbarMobile">
+		<span></span>
+		<a href="../../index.html">Imran Khaliq</a>
+		<a href="../../projects/index.html">Projects</a>
+		<a href="../index.html">Practice</a>
+	</div>
+
+	<div class="main">
+ 		<div class="banner">
+ 			<br>
+ 			<h2 style="margin-left: 50px; padding-bottom: 15px; margin-right: 50px; font-size:250%;">EE 16A - Linear Transformations</h2>
+ 			<p style="margin-left: 50px;font-size:120%; padding-right: 20px;
+">Practice Problems</p>
+ 		</div>
+
+ 		<center>
+
+			<div style="background: #8ab6fc; margin-top: 15px; width: 85%;">
+				<center>
+					<p style="font-size: 100%;text-align: left; color: #202226; padding: 15px;"><b style="font-family: kadwa-bold">Note: </b>I am not an official teacher or GSI for any of the courses listed on this site unless otherwise stated. Any problems and notes are created from my own observations and may not accurately reflect the course's content.</p>
+				</center>
+			</div>
+
+			<div style="width: 85%;">
+				<h1 style="text-align: left; color: #505763">Linear Transformations #1</h1>
+
+				<p style="text-align: left;">
+					Three tea shops, shop A, shop B, and shop C, control the entirety of the Berkeley boba market. At a time where t = 0, the shares of the market are: A, 0.4; B, 0.2; C, 0.4. During the first year, shop A retained 85% of its customers, lost 5% to shop B, and lost 10% to shop C. Shop B retained 75%, and lost 15% to shop A, 10% to shop C. Shop C retained 90% and lost 5% to A, 5% to B. Assume that this trend does not change and the Berkeley boba market does not expand or contract. 
+				</p>
+
+			
+
+				<a href="javascript:void(0);" class="icon" onclick="mobileMenuShower()">
+			    	<i class="fa fa-bars"></i>
+			 	</a>
+				<!-- Added here because github thing messes up the nav bar-->
+				<div class="navbar">
+					<span></span>
+					<a href="../../index.html">Imran Khaliq</a>
+					<a href="../../projects/index.html">Projects</a>
+					<a href="../index.html">Practice</a>
+				</div>
+				
+				
+				<h2 style="text-align: left;">Problem A</h2>
+				<p style="text-align: left;">Write the transition matrix, <i>matrix A</i>, for the first year.</p>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem A
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(0)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre><code class="language-python"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\LARGE&space;A&space;=&space;\begin{bmatrix}&space;0.85&space;\0.15&space;\0.05&space;\\&space;0.05&space;\0.75&space;\&space;0.05&space;\\&space;0.10&space;\0.10&space;\0.90&space;&&space;\end{bmatrix}" title="\LARGE A = \begin{bmatrix} 0.85 \0.15 \0.05 \\ 0.05 \0.75 \ 0.05 \\ 0.10 \0.10 \0.90 & \end{bmatrix}" /></code></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem B</h2>
+				<p style="text-align: left;">Write a general form for the next year, x<sub>t+1</sub> in terms of the transition matrix, <i>A</i>, and the current state, x<sub>t</sub> .</p>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem B
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(1)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\vec{x}_{t&plus;1}&space;=&space;A\vec{x}_{t}" title="\large \vec{x}_{t+1} = A\vec{x}_{t}" /></code></pre>
+	 				</div>
+
+				</div>
+
+				<h2 style="text-align: left;">Problem C</h2>
+				<p style="text-align: left;">Find the market share of each boba shop after the first year using the transiton matrix, <i>A</i>, and the original market share values, x<sub>0</sub></p>
+				<div class="topicList" style="width: 100%; background: #eff1f4;">
+					<div class="topicHeader" style="display: flex;">
+						<div style="width: 60%;text-align: left;">
+							<h2  class="answerLabel" style="text-align: left; margin:0px; padding: 15px; color: #505763;">Solution to Problem C
+		 					</h2>
+	 					</div>
+	 					<div style="width: 40%; text-align: right;">
+		 					<a style="background: #eff1f4;color: #0475e0;" href="javascript:void(0);" onclick="toggleTopic(2)">
+		    						<h2 style="margin: 0px; padding:0px; padding-top:15px;padding-right: 30px;"><i style="" class="fa fa-angle-down fa-2x" aria-hidden="true"></i></h2>
+		 					</a>
+		 				</div>
+	 				</div>
+
+	 				<div class="topicDesc" style="background: #f4f5f7; display: none;">
+	 					<pre style="margin: 0px;"><code class="language-python"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\large&space;\vec{x}_{1}&space;=&space;A\vec{x}_{0}&space;=&space;\begin{bmatrix}&space;0.39\\&space;0.19&space;\\&space;0.42&space;\end{bmatrix}" title="\large \large \vec{x}_{1} = A\vec{x}_{0} = \begin{bmatrix} 0.39\\ 0.19 \\ 0.42 \end{bmatrix}" /></code></pre>
+	 				</div>
+				</div>
+				<p>Have a question? Found an error? Email me at <a style="text-decoration: none; color: #0475e0" href="mailto:imran.khaliq@berkeley.edu">imran.khaliq@berkeley.edu</a> with the URL of the page and a short description.</p>
+
+			</div>
+		</center>
+	</div>
+
+	<script>
+		function mobileMenuShower() {
+		  var x = document.getElementsByClassName("navbarMobile")[0];
+		  if (x.style.display === "block") {
+		    x.style.display = "none";
+		  } else {
+		    x.style.display = "block";
+		  }
+		}
+
+		function toggleTopic(y) {
+			var topicHeader = document.getElementsByClassName("topicHeader")[y];
+			var topicDesc = document.getElementsByClassName("topicDesc")[y];
+
+			if (topicHeader.getElementsByTagName('i')[0].className == "fa fa-angle-down fa-2x") {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-up fa-2x";
+				topicDesc.style.display = "block";
+			} else {
+				topicHeader.getElementsByTagName('i')[0].className = "fa fa-angle-down fa-2x";
+				topicDesc.style.display = "none";
+			}
+
+		}
+	</script>
+</body>
+</html>
